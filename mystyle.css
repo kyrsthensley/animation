@@ -1,0 +1,207 @@
+body {
+     background: linear-gradient(
+          to bottom,
+          white,
+          white 50%,
+          #edf6f9 50%,
+          #edf6f9
+          );
+
+     background-size: 100% 20px;
+}
+
+#text {
+     font-style: italic;
+     font-family: sans-serif;
+     padding-left: 270px;
+     padding-top: 60px;
+}
+
+#container {
+     position: absolute;
+     margin-left: 400px;
+     top: 150px;
+     height: 400px;
+     width: 400px;
+     border-style: grey;
+
+}
+
+#cup {
+     border-top: 100px solid #bdb2ff;
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     width: 60px;
+
+     margin-left: 150px;
+     margin-top:150px;
+
+   }
+
+ #label {
+        width: 60px;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        color: pink;
+        font-style: italic;
+        font-family: sans-serif;
+       margin-left: 170px;
+       margin-top:-80px;
+       border-radius: 5%;
+      }
+
+#straw1 {
+     position: absolute;
+     left: 200px;
+     top: 70px;
+     width: 8px;
+     height: 150px;
+     transform: rotate(20deg);
+     background: pink;
+     animation-play-state:paused;
+     z-index: -1;
+}
+
+#straw2 {
+     position: absolute;
+     left: 247px;
+     top: 47px;
+     width: 8px;
+     height: 50px;
+     transform: rotate(80deg);
+     background: pink;
+     animation-name: straw;
+     animation-duration: 4s;
+}
+
+#bub1 {
+     position: absolute;
+     left: 200px;
+     top: 120px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: rgba(105, 222, 249, 40%);
+     z-index: -2;
+     animation-name: bubbles1;
+     animation-duration: 4s;
+}
+
+#bub2 {
+     position: absolute;
+     left: 170px;
+     top: 105px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: rgba(105, 222, 249, 40%);
+     z-index: -3;
+     animation-name: bubbles2;
+     animation-duration: 4s;
+}
+
+#bub3 {
+     position: absolute;
+     left: 150px;
+     top: 115px;
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     background-color: rgba(105, 222, 249, 40%);
+     z-index: -4;
+     animation-name: bubbles3;
+     animation-duration: 4s;
+}
+
+#bub4 {
+     position: absolute;
+     left: 190px;
+     top: 90px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: rgba(105, 222, 249, 40%);
+     animation-name: bubbles4;
+     animation-duration: 4s;
+}
+
+#bub5 {
+     position: absolute;
+     left: 160px;
+     top: 90px;
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     background-color: rgba(105, 222, 249, 40%);
+     animation-name: float;
+     animation-duration: 4s;
+}
+
+#bub6 {
+     position: absolute;
+     left: 170px;
+     top: 105px;
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     background-color: rgba(155, 246, 255, 40%);
+     animation-name: float2;
+     animation-duration: 4s;
+}
+
+
+@keyframes bubbles1 {
+     0% {background-color: rgba(253,255,182,40%);}
+     25% {background-color: rgba(202,255,191,40%);}
+     50% {background-color: rgba(155,246,255,40%);}
+     100% {background-color: rgba(253,214,165,40%);}
+}
+
+@keyframes bubbles2 {
+     0% {background-color: rgba(202,255,191,40%);}
+     25% {background-color: rgba(253,255,182,40%));}
+     50% {background-color: rgba(253,214,165,40%);}
+     100% {background-color: rgba(155,246,255,40%);}
+}
+
+@keyframes bubbles3 {
+     0% {background-color: rgba(253,214,165,40%);}
+     25% {background-color: rgba(253,255,182,40%));}
+     50% {background-color: rgba(202,255,191,40%);}
+     100% {background-color: rgba(155,246,255,40%);}
+}
+
+@keyframes bubbles4 {
+     0% {background-color: rgba(155,246,255,40%);}
+     25% {background-color: rgba(253,255,182,40%));}
+     50% {background-color: rgba(202,255,191,40%);}
+     100% {background-color:rgba(253,214,165,40%) ;}
+}
+
+/*@keyframes bubbles5 {
+     0% {background-color: rgba(253,214,165,40%);}
+     25% {background-color: rgba(253,255,182,40%));}
+     50% {background-color: rgba(155,246,255,40%);}
+     100% {background-color: rgba(202,255,191,40%);}
+}*/
+
+@keyframes straw {
+     0% {top:45px; transform: rotate(70deg);}
+     50% {top:40px; left: 245px; transform: rotate(60deg);}
+     100% {top:37px; left: 245px; transform: rotate(50deg);}
+}
+
+@keyframes float {
+     0% {top:80px; left: 150px;}
+     50% {top:70px; }
+     100% {top:60px; left: 0px;}
+
+}
+
+@keyframes float2 {
+     0% {top:80px; left: 150px;}
+     50% {top:50px; }
+     100% {top:0px; left: 40px;}
+
+}
